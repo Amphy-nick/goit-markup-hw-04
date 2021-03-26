@@ -1,0 +1,421 @@
+:root {
+  --main-text-color: #212121;
+  --auxiliary-text-color: #757575;
+  --accent-text-color: #2196f3;
+  --main-bg-color: #ffffff;
+  --auxiliary-bg-color: #f5f4fa;
+  --main-bg-section-color: #2f303a;
+
+  --logo-font: 'Raleway', sans-serif;
+  --main-text-font: 'Roboto', sans-serif;
+
+  --grid-item: 3;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: var(--main-bg-color);
+  font-family: var(--main-text-font);
+  color: var(--main-text-color);
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.flex {
+  display: inline-flex;
+}
+
+.section {
+  padding-bottom: 94px;
+}
+
+/* Header */
+
+.header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+  border: 1px solid #ececec;
+}
+
+.header .container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.logo {
+  font-family: var(--logo-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+
+.header .logo {
+  margin-right: 93px;
+}
+
+.blue-web-logo {
+  color: var(--accent-text-color);
+}
+
+.white-studio-logo {
+  color: var(--main-bg-color);
+}
+
+.header .current {
+  color: var(--accent-text-color);
+}
+
+.nav-link-item {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--main-text-color);
+}
+
+.nav-list-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.contacts-list-item-header:not(:last-child) {
+  margin-right: 50px;
+}
+
+.contacts-link-item-header {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--auxiliary-text-color);
+}
+
+.nav-link-item:hover,
+.nav-link-item:focus,
+.contacts-link-item-header:hover,
+.contacts-link-item-header:focus,
+.adress-link-item:hover,
+.adress-link-item:focus,
+.contacts-link-item-footer:hover,
+.contacts-link-item-footer:focus {
+  color: var(--accent-text-color);
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
+
+/* Buttons */
+
+.button {
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+  border: 0;
+  border-radius: 4px;
+}
+
+.main-button {
+  background-color: var(--accent-text-color);
+  color: var(--main-bg-color);
+  font-weight: 700;
+  line-height: 1.88;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.06em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  padding: 10px 32px;
+  margin: 30px auto 0;
+}
+
+.main-button:hover,
+.main-button:focus {
+  background-color: var(--auxiliary-bg-color);
+  color: var(--main-text-color);
+}
+
+.portfolio-button {
+  background-color: var(--auxiliary-bg-color);
+  font-weight: 500;
+  line-height: 1.63;
+  letter-spacing: 0.03em;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  padding: 6px 22px;
+}
+
+.portfolio-button:hover,
+.portfolio-button:focus {
+  background-color: var(--accent-text-color);
+  color: var(--main-bg-color);
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/* PAGE 1 (MAIN)*/
+
+/* Hero section */
+
+.hero-section,
+.hero-content {
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+.hero-section {
+  background-color: var(--main-bg-section-color);
+  padding-bottom: 200px;
+  padding-top: 200px;
+}
+
+.hero-section-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--main-bg-color);
+  margin-bottom: 0;
+}
+
+.hero-content {
+  max-width: 696px;
+}
+
+/* Advantages-section */
+
+.advantages,
+.our-team {
+  padding-top: 94px;
+}
+
+.advantages-section-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.advantages-section-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--auxiliary-text-color);
+  margin-top: 10px;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+/* Portfolio-section */
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.grid-item {
+  flex-basis: calc((100% - 30px * var(--grid-item)) / var(--grid-item));
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.advantages-list-item,
+.grid-item-team {
+  --grid-item: 4;
+  flex-basis: calc((100% - 30px * var(--grid-item)) / var(--grid-item));
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+.portfolio-main-title,
+.our-team-title {
+  margin-bottom: 50px;
+}
+
+/* Our team section */
+
+.our-team {
+  background-color: var(--auxiliary-bg-color);
+}
+
+.team-item:not(:first-child) {
+  margin-left: 30px;
+}
+
+.name-profession {
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.ourteam-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  padding-bottom: 10px;
+  padding-top: 30px;
+}
+
+.ourteam-position {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--auxiliary-text-color);
+  padding-bottom: 30px;
+}
+
+/* Footer */
+
+.footer .container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.footer {
+  background-color: #2f303a;
+}
+
+.logo-footer {
+  display: inline-block;
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+
+.adress-link-item {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--main-bg-color);
+}
+
+.contacts-link-item-footer {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.adress-list {
+  padding-bottom: 57px;
+}
+
+.adress-list-item:not(:first-child) {
+  margin-top: 9px;
+}
+
+/* PAGE 2 (PORTFOLIO) */
+
+.portfolio-page {
+  padding-top: 94px;
+}
+
+.filter {
+  text-align: center;
+}
+
+.portfolio-section-object {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.portfolio-section-area {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  margin-top: 4px;
+}
+
+.portfolio-filter-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.portfolio-filter-link:not(:last-child) {
+  margin-right: 8px;
+}
+
+.portfolio-expo {
+  background-color: var(--main-bg-color);
+  border: 1px solid #eeeeee;
+  padding: 20px 24px;
+}
