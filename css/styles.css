@@ -214,7 +214,17 @@ img {
 }
 
 .hero-section {
-  background-color: var(--main-bg-section-color);
+  max-width: 1600px;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images-2/background-image.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: #c4c4c4;
   padding-bottom: 200px;
   padding-top: 200px;
 }
@@ -274,7 +284,6 @@ img {
   display: flex;
   flex-wrap: wrap;
   padding: 0;
-  margin: 0;
   margin-left: -30px;
   margin-top: -30px;
 }
@@ -302,10 +311,6 @@ img {
 
 .our-team {
   background-color: var(--auxiliary-bg-color);
-}
-
-.team-item:not(:first-child) {
-  margin-left: 30px;
 }
 
 .name-profession {
@@ -418,4 +423,54 @@ img {
   background-color: var(--main-bg-color);
   border: 1px solid #eeeeee;
   padding: 20px 24px;
+}
+
+/* Practice*/
+
+.itemsss {
+  display: flex;
+  align-items: center;
+}
+
+.itemsss:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.itemsss::before {
+  content: '';
+  display: none;
+  background-image: url(../images/finger1.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+  padding-left: 15px;
+  margin-right: 20px;
+  border-radius: 50%;
+  border-color: #2196f3;
+}
+
+.itemsss:hover::before {
+  display: block;
+  background-image: url(https://image.flaticon.com/icons/svg/785/785116.svg);
+  background-color: aqua;
+}
+
+.buttonx {
+  display: inline-flex;
+  align-items: center;
+  padding: 40px;
+  background-color: aqua;
+  color: #f5f4fa;
+  margin-top: 50px;
+  margin-left: 50px;
+  border-radius: 10%;
+}
+.iqon {
+  width: 20px;
+  height: 20px;
+  background-color: yellow;
+  margin-left: 20px;
+  background-image: url(../images/finger1.svg);
+  background-repeat: no-repeat;
 }
