@@ -125,6 +125,8 @@ img {
 }
 
 .contacts-link-item-header {
+  display: flex;
+  align-items: center;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -147,6 +149,27 @@ img {
   display: flex;
   align-items: center;
   margin-right: auto;
+}
+
+.contacts-link-item-header .icon-mail {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.contacts-link-item-header .icon-phone {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.contacts-link-item-header:hover .icon-phone,
+.contacts-link-item-header:focus .icon-phone,
+.contacts-link-item-header:hover .icon-mail,
+.contacts-link-item-header:focus .icon-mail {
+  fill: var(--accent-text-color);
 }
 
 /* Buttons */
@@ -267,6 +290,33 @@ img {
   margin-top: 10px;
 }
 
+.advantages-list-item::before {
+  display: block;
+  content: '';
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: var(--auxiliary-bg-color);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 4px;
+}
+
+.antenna-icon::before {
+  background-image: url(../images-features-section/antenna.svg);
+}
+
+.clock-icon::before {
+  background-image: url(../images-features-section/clock.svg);
+}
+
+.diagram-icon::before {
+  background-image: url(../images-features-section/diagram.svg);
+}
+
+.astronaut-icon::before {
+  background-image: url(../images-features-section/astronaut.svg);
+}
+
 .visually-hidden {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px);
@@ -314,7 +364,7 @@ img {
 }
 
 .name-profession {
-  background: #ffffff;
+  background: var(--main-bg-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -337,19 +387,76 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--auxiliary-text-color);
+  padding-bottom: 16px;
+}
+
+.social-links-list {
+  display: flex;
+  justify-content: center;
   padding-bottom: 30px;
 }
 
+.social-icons-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-links-list .icon {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+}
+
+.social-icons-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--main-bg-color);
+}
+
+.social-icons-link:hover .icon,
+.social-icons-link:focus .icon {
+  fill: var(--main-bg-color);
+}
+
+.social-icons-link:hover,
+.social-icons-link:focus {
+  background-color: var(--accent-text-color);
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.grid-item-customers {
+  --grid-item: 6;
+  flex-basis: calc((100% - 30px * var(--grid-item)) / var(--grid-item));
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.regular-customers-list-item {
+  width: 170px;
+  height: 90px;
+}
 /* Footer */
 
 .footer .container {
   width: 1200px;
+  display: flex;
+  align-items: baseline;
   padding-left: 15px;
   padding-right: 15px;
 }
 
 .footer {
-  background-color: #2f303a;
+  background-color: var(--main-bg-section-color);
 }
 
 .logo-footer {
@@ -382,6 +489,48 @@ img {
 
 .adress-list-item:not(:first-child) {
   margin-top: 9px;
+}
+
+.footer-block-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--main-bg-color);
+  margin-left: 70px;
+}
+
+.social-links-list-footer {
+  display: flex;
+  justify-content: center;
+  margin-left: 70px;
+  margin-top: 20px;
+}
+
+.social-icons-item-footer:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-links-list-footer .icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--main-bg-color);
+}
+
+.social-icons-link-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.social-icons-link-footer:hover,
+.social-icons-link-footer:focus {
+  background-color: var(--accent-text-color);
 }
 
 /* PAGE 2 (PORTFOLIO) */
@@ -466,11 +615,19 @@ img {
   margin-left: 50px;
   border-radius: 10%;
 }
-.iqon {
-  width: 20px;
-  height: 20px;
+
+.buttonx::before {
+  display: none;
+  content: '';
+  width: 40px;
+  height: 40px;
   background-color: yellow;
-  margin-left: 20px;
-  background-image: url(../images/finger1.svg);
+  margin-right: 20px;
+  background-image: url(../images/img\(2\).jpg);
   background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.buttonx:hover::before {
+  display: block;
 }
