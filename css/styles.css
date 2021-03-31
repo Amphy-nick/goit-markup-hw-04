@@ -493,7 +493,8 @@ img {
 
 /* Footer */
 
-.footer-part-first {
+.footer-part-first,
+.footer-social-links {
   flex-basis: calc((50%-45px) / 2);
 }
 
@@ -552,7 +553,6 @@ img {
 
 .social-links-list-footer {
   display: flex;
-  justify-content: center;
   margin-top: 20px;
 }
 
