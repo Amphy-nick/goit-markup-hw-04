@@ -417,9 +417,11 @@ img {
   height: 44px;
   border-radius: 50%;
 }
+
 .our-team .social-icons-link {
   background-color: var(--main-bg-color);
 }
+
 .our-team .social-icons-link:hover .icon,
 .our-team .social-icons-link:focus .icon {
   fill: var(--main-bg-color);
