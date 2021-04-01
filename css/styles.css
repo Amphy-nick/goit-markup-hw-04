@@ -457,32 +457,32 @@ img {
   border-radius: 4px;
 }
 
-.regular-customers-list .icon-one {
+.regular-customers-list li:nth-child(1) svg {
   width: 45px;
   height: 50px;
 }
 
-.regular-customers-list .icon-two {
+.regular-customers-list li:nth-child(2) svg {
   width: 40px;
   height: 52px;
 }
 
-.regular-customers-link .icon-three {
+.regular-customers-list li:nth-child(3) svg {
   width: 41px;
   height: 43px;
 }
 
-.regular-customers-link .icon-four {
+.regular-customers-list li:nth-child(4) svg {
   width: 80px;
   height: 42px;
 }
 
-.regular-customers-link .icon-five {
+.regular-customers-list li:nth-child(5) svg {
   width: 59px;
   height: 47px;
 }
 
-.regular-customers-link .icon-six {
+.regular-customers-list li:nth-child(6) svg {
   width: 88px;
   height: 46px;
 }
