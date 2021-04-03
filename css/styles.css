@@ -41,6 +41,11 @@ a {
   text-decoration: none;
 }
 
+a:focus,
+button:focus {
+  outline: none;
+}
+
 .list {
   list-style: none;
   padding-left: 0;
@@ -371,6 +376,11 @@ img {
   border-radius: 0px 0px 4px 4px;
 }
 
+.name-profession {
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
 .ourteam-name {
   font-weight: 500;
   font-size: 16px;
@@ -378,7 +388,6 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   padding-bottom: 10px;
-  padding-top: 30px;
 }
 
 .ourteam-position {
@@ -394,7 +403,6 @@ img {
 .social-links-list {
   display: flex;
   justify-content: center;
-  padding-bottom: 30px;
 }
 
 .social-icons-item:not(:last-child) {
